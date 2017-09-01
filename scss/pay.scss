@@ -1,0 +1,48 @@
+#paycontent{
+    width: 100%;
+    .back12{
+        width: 100%;height: 40px;line-height: 40px;
+        text-indent: 10px;border-bottom: 1px solid #eee;
+        a{
+            color: #000;
+        }
+    }
+    h4{
+        width: 90%;margin-left: 5%;font-size: 18px;font-weight: 100;
+        height: 40px;line-height: 40px;
+    }
+    ul{
+        li{
+            width: 90%;margin-left: 5%;font-size: 12px;height: 30px;
+            border-top: 1px solid #EEEEEE;line-height: 30px;;
+            .goodsname{
+                float: left;
+            }
+            .money{
+                float: right;
+            }
+        }
+    }
+    .zonggong{
+        width: 90%;margin:10px auto;overflow: hidden;
+        .right{
+            float: right;
+        }
+    }
+   .payfooter{
+       width: 100%;
+       position: fixed;bottom: 0px;left: 0px;font-size: 12px;border-top: 1px solid #EEEEEE;
+       height: 44px;line-height: 44px;
+       .pfoo{
+           float: left;width: 70%;color: #f66;
+           text-indent: 10px;
+       }
+       .qian{
+            float: right;width: 30%;background: #f66;color: #fff;
+            text-align: center;
+       }
+   }
+   .xian{
+       width: 100%;height: 5px;background: #eee;
+   }
+}

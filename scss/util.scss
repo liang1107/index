@@ -1,0 +1,46 @@
+@import "reset.scss";//重置css
+
+//iconfont图标
+@font-face {
+  font-family: 'iconfont';  /* project id 361407 */
+  src: url('//at.alicdn.com/t/font_361407_wt1ogc47o0w9udi.eot');
+  src: url('//at.alicdn.com/t/font_361407_wt1ogc47o0w9udi.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_361407_wt1ogc47o0w9udi.woff') format('woff'),
+  url('//at.alicdn.com/t/font_361407_wt1ogc47o0w9udi.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_361407_wt1ogc47o0w9udi.svg#iconfont') format('svg');
+}
+
+.iconfont {
+    font-family: iconfont;
+}
+
+@mixin flexBox{
+    display: -webkit-box;
+//  display: -ms-flexbox;
+    display: flex;
+}
+@mixin flex($num:1){
+     -webkit-box-flex: $num;
+    flex: $num;
+}
+@mixin flex-direction($dir:row){
+    @if $dir == row {
+        -webkit-box-orient: horizontal;
+        flex-direction: row;
+    }
+    @else {
+         -webkit-box-orient: vertical;
+          flex-direction: column;
+    }
+}
+
+//水平垂直居中
+@mixin flex-center{
+    @include flexBox;
+    @include flex-direction("column");
+    
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+}

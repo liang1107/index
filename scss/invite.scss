@@ -1,0 +1,38 @@
+
+
+.flex{
+    .yao{
+        width: 100%;
+        img{
+            width: 100%;
+        }
+        .you{
+            width: 90%;margin: 20px auto;
+            font-size: 12px;color: #989A9D;
+        }
+        .jike{
+            width: 30%;height: 40px;font-size: 12px;color: #fff;
+            line-height: 40px;background: #f66;
+            border-radius: 3px;text-align: center;
+            margin: 0 auto;
+        }
+        p{
+            text-align: center;font-size: 12px;
+            margin-top: 20px;
+            color: #B0B3B7;
+        }
+        .ps{
+          font-size: 12px;width: 90%;
+            margin: 20px auto;
+            overflow: hidden;
+            .left{
+                float: left;color: #B0B3B7;
+                        font-size: 12px;
+            }
+            .right{
+                float: right;color: #B0B3B7;
+                        font-size: 12px;
+            }
+        }
+    }
+}

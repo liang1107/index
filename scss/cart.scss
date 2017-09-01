@@ -1,0 +1,123 @@
+.carthou{
+    width: 100%;
+    ul{
+        width: 100%;
+        li{
+            width: 100%;display:flex;margin-top:10px;
+            .dui1{
+                width: 10%;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                 .dui{
+                    display: inline-block;margin: 10px 10px 0;text-align: center;
+                        width: 11px;height: 11px;border-radius: 50%;
+                        border: 1px solid #A1A4A9;line-height: 11px;
+                        color:#f66;
+                }
+            }
+               
+            .im{
+                width: 40%;
+                img{
+                    width: 100%;
+                }
+            }
+            .godright{
+                width: 50%;
+                box-sizing: border-box;
+                margin-left: 10px;
+                .title{
+                    width: 90%;overflow: hidden;white-space: nowrap;font-size: 12px;
+                    text-overflow: ellipsis;
+                }
+                .danjia{
+                    color: #f66;margin:10px 0;font-size: 12px;
+                }
+                .dela{
+                    span{
+                        &:nth-of-type(1){
+                            background: #E9EAED;padding:0px 5px;
+                           
+                        }
+                        &:nth-of-type(3){
+                            background: #E9EAED;padding:0px 5px;
+                           
+                        }
+                    }
+                    .shan{
+                                float:right;margin-right: 10px;
+                            }
+                }
+            }
+        }
+    }
+    .kong{
+        width: 100%;height: 200px;
+        img{
+            width: 50%;
+            margin: 30px 25% 20px;
+        }
+    }
+    .ou{
+        width: 100%;text-align: center;
+        color: #A1A4A9;
+    }
+}
+.lick{
+    width: 100%;margin-top:30px;
+    p{
+        width: 100%;text-align: center;
+    }
+    .licklist{
+        width: 100%;margin-top:20px;
+        ul{
+            width: 90%;margin-left: 5%;
+            display: flex;flex-wrap:wrap;
+            font-size: 12px;                                          
+            li{
+                width: 50%;
+                box-sizing: border-box;
+                img{
+                    width: 100%;
+                }
+                .title{
+                    width: 90%;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+                .jiage{
+                    color: #f66;
+                }
+            }
+        }
+    }
+}
+.cartfooter{
+    position: fixed;
+    bottom: 0;left: 0;
+    height: 40px;
+    border: 1px solid #F6F6F7;
+    line-height: 40px;width:100%;
+    .cleft{
+        width: 60%;height: 100%;float: left;background: #fff;font-size: 12px;
+        color: #f66;
+       
+        .dui{
+            display: inline-block;margin: 10px 10px 0;text-align: center;
+            width: 11px;height: 11px;border-radius: 50%;
+            border: 1px solid #A1A4A9;line-height: 11px;
+
+        }
+        .heji{
+            float: right;margin:0 20px;
+        }
+    }
+    .cright{
+        width:40%;height: 100%;float: right;
+        color: #fff;background: #f66;
+        text-align: center;
+    }
+}

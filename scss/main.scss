@@ -1,0 +1,97 @@
+@import "util.scss";//工具类css----兼容性
+
+html,body,#app{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+.container{
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+    height: 100%;
+    @include flexBox;
+    @include flex-direction('column');
+    
+//  -webkit-box-orient: vertical;
+//  flex-direction: column;
+      .flex{
+          overflow-y: auto;
+           &::-webkit-scrollbar{
+                width: 0px;
+           }
+
+        .header{
+            position: relative;
+            height: 44px;
+            width: 100%;
+            background-color: #000;
+            
+            font-size: 18px;
+            font-weight: bold;
+            color: #fff;
+            text-shadow: 1px 1px 1px #000;
+            
+            .commonHeader{
+                width: 100%;
+                height: 100%;
+                @include flexBox;
+                @include flex-direction("row");
+                // text-align: center;
+                .back{
+                    width: 90px;
+                    
+                    line-height: 44px;
+                    font-size: 12px;
+                    margin-left: 10px;
+                   
+                }
+                .title{
+                    flex: 1;
+                    display: block;
+                    line-height: 44px;
+                    span{
+                       font-size: 12px;
+                    }
+                }
+                .moreInfo{
+                    width: 90px;
+                    font-size: 15px;
+                    font-weight: 100;
+                    display: block;
+                    line-height: 44px;
+                    span{
+                        margin-left: 10px;
+                    }
+                }
+            }
+            
+        }
+        #content{
+            width: 100%;
+            
+           @include flex(1);
+           
+        }
+     } 
+        .footer{
+            height: 50px;
+            width: 100%;
+            background-color: #fff;
+            color:#b2b2b2;
+            
+            ul{
+                width: 100%;
+                height: 100%;
+                 @include flexBox;
+                li{
+                    @include flex(1);
+                    @include flex-center;
+                    a{
+                         color:#b2b2b2;
+                    }
+                   
+                }
+            }
+        }
+}
